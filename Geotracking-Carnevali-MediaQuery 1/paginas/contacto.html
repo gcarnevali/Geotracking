@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <hr>
+    <h4>
+        <nav>
+            <ul type="square">
+                <!-- disc, circule, square-->
+                <li> <a href="../index.html">Inicio</a></li>
+                <li> <a href="quienesomos.html">¿Quienes somos?</a> </li>
+                <li> <a href="comofunciona.html">¿Como funciona?</a> </li>
+                <li> <a href="nuestrosclientes.html">Nuestros Clientes</a> </li>
+                <li> <a href="contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
+    </h4>
+    <hr>
+
+    <h2>Dejanos tu consulta</h2>
+    <form action="enviar.php" method="post" enctype="text/plain">
+        <label for="name">Nombre</label><br>
+        <input type="text" name="Nombre" required><br><br>
+        <label for="apellido">Apellido</label><br>
+        <input type="text" apellido="Apellido" required><br><br>
+        <label for="email">E-Mail</label><br>
+        <input type="email" email="E-Mail"><br><br>
+        <label for="actualsituation">¿Cuál es su situación laboral?</label><br>
+        <select name="menu">
+            <option value="0">...</option>
+            <option value="1">Particular</option>
+            <option value="2">Relacion de dependencia</option>
+
+        </select><br><br>
+        <label for="comentarios">Consulta</label><br>
+        <textarea name="comentarios" rows="4" cols="20" placeholder="Deje aqui su comentario"></textarea><br><br>
+        <label for="terms">Acepto las bases y condiciones</label>
+        <input type="checkbox" name="terms" required><BR><BR>
+
+        <input type="reset" value="Limpiar formulario">
+
+        <input type="submit" value="Enviar">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <hr>
+        <center>Desde 2022</center>
+    </footer>
+    <hr>
+</body>
+
+</html>
