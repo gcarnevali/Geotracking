@@ -5,10 +5,14 @@
 
 }
 
-/*Titulos: 30px
-subtitulos: 25px
-texto: 20px
-texto chico: 10 o 15px*/
+
+
+/*@keyframes fadeInOut {
+    0%, 50%, 100% {opacity: 0;}
+    50% {opacity: 1;}
+}*/
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -22,6 +26,7 @@ header {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: fixed;
+    z-index: 1;
 }
 
 .logo {
@@ -122,6 +127,11 @@ h1 {
     font-weight: bold;
     height: fit-content;
     background-color: #000814;
+    
+    /*animation: fadeInOut 8s forwards;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;*/
+    
 
 
 
@@ -130,29 +140,14 @@ h1 {
 
 h2 {
     text-align: center;
-    background-color: #000814e9;
+    background-color: #000814;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     color: #f1faee;
     font-weight: bold;
     height: fit-content;
-    background-color: #000814;
     padding-top: 150px;
-    animation-duration: 2s;
-    animation-delay: 5s;
-    animation-iteration-count: 0;
-
-
-}
-
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+    animation-fill-mode: inherit;
 
 }
 
@@ -164,12 +159,15 @@ section {
     padding-right: 200px;
     padding-bottom: 150px;
     background-color: #000814;
+    
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     text-align: center;
     display: grid;
+
 }
 
 .img {
@@ -195,10 +193,11 @@ section {
     padding-left: 100px;
     display: grid;
 
-
 }
 
-
+h2 #sec1 {
+    background-color: #000814;
+}
 
 .quienessomos {
 
@@ -217,10 +216,15 @@ section {
     width: 100%;
     display: grid;
 
+
 }
 
 .sec1 p {
     padding-top: 25px;
+    /*animation: fadeInOut 8s forwards;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;*/
+
 }
 
 .sec2 {
@@ -238,6 +242,11 @@ iframe {
     padding-left: 150px;
     width: 100%;
 
+
+    /*animation: fadeInOut 8s forwards;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;*/
+
 }
 
 .comofunciona_p {
@@ -254,6 +263,8 @@ iframe {
     background-color: #00081407;
     float: left;
     width: 100%;
+
+
 }
 
 .sec3 {
@@ -286,6 +297,10 @@ iframe {
     color: #f1faee;
     font-weight: lighter;
     float: none;
+
+    /*animation: fadeInOut 8s forwards;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;*/
 }
 
 .nuestrosclientes_nombre {
@@ -296,6 +311,10 @@ iframe {
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    /*animation: fadeInOut 8s forwards;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;*/
 
 
 }

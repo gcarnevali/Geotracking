@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css" 
+    <link rel="stylesheet" href="estilos.css"> 
+    <link rel="stylesheet1" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -37,7 +39,7 @@
 
         <h2 id="sec1">¿Quiénes Somos?</h2>
         <section class="sec sec1">
-            <div class="quienessomos">
+            <div class="quienessomos" data-aos="flip-down" data-aos-duration="1000">
                 <!--<center>
                 <img src="imagenes/geotracking.jpg" width="auto" height="auto">
                 </center>-->
@@ -54,23 +56,23 @@
         <h2 id="sec2"> ¿Cómo funciona Geotracking? </h2>
         <section class="sec sec2">
            
-    <p class="comofunciona_p">
+    <p class="comofunciona_p" data-aos="flip-down" data-aos-duration="1000">
         Su función es muy sencilla, a través de un sistema de mapeo global de Google Maps (donde la fuente puede ser un celular, o un chip insertado en la flota) <b>permite al usuario localizar y visualizar la ubicación en tiempo real del vehículo</b>, para así poder saber
         dónde se encuentra, y por si éste requiere algún redireccionamiento.
 
     </p>
 
     <div style="text-align: center">
-    <iframe width="100%" height="350" src="https://www.youtube.com/embed/uOfZo6ilhIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/uOfZo6ilhIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="flip-down" data-aos-duration="2000"></iframe></div>
 
 
 
         </section>
         <h2 id="sec3">Nuestros Clientes</h2>
         <section class="sec sec3">
-            <p class="nuestrosclientes_p">
+            <p class="nuestrosclientes_p" data-aos="flip-down" data-aos-duration="1000">
                 Soy dueño de una logística que transporta vinos, siempre fui de la vieja escuela en cuanto a comunicación y recorrido, todo a través de llamados telefónicos. Mucha ansiedad porque por momentos no tenía novedades respecto al transporte, se demoraba para las entregas, sufriamos mucho el tránsito de CABA. Hasta que Gianni me ofreció probar sin costo Geotracking, y desde ahí el contraste fue enorme. Trazabilidad, optimización de tiempo, eficiencia absoluta.
-                <div class="nuestrosclientes_nombre">
+                <div class="nuestrosclientes_nombre" data-aos="flip-down">
                     Emmanuel Agüero, CEO de Transportes del Sur SA.</div>
 
 
@@ -82,7 +84,7 @@
         </p>
 
 
-        <section class="sec sec4"><div class="form">
+        <section class="sec sec4"><div class="form" data-aos="flip-down" data-aos-duration="1000">
 
             <form action="enviar.php" method="post" enctype="text/plain">
         <label for="name">Nombre</label><br>
@@ -121,6 +123,12 @@
             
         </footer>
         <a href="#" class="subir"><i class="fa-solid fa-angles-up"></i></div>
-</body>
+
+
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+ AOS.init();
+ </script>
+        </body>
 
 </html>
