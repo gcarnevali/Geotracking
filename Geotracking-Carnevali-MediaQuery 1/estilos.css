@@ -5,13 +5,7 @@
 
 }
 
-
-
-/*@keyframes fadeInOut {
-    0%, 50%, 100% {opacity: 0;}
-    50% {opacity: 1;}
-}*/
-
+/**************************************************************************************************************************************************************************/
 
 html {
     scroll-behavior: smooth;
@@ -117,6 +111,8 @@ main {
 
 }
 
+/**************************************************************************************************************************************************************************/
+
 h1 {
     /*Color de los inicios de pagina*/
     text-align: center;
@@ -128,13 +124,6 @@ h1 {
     height: fit-content;
     background-color: #000814;
     
-    /*animation: fadeInOut 8s forwards;
-    animation-iteration-count: 1;
-    animation-fill-mode: backwards;*/
-    
-
-
-
 
 }
 
@@ -179,6 +168,8 @@ section {
     text-align: center;
 }
 
+/**************************************************************************************************************************************************************************/
+
 .sec1 {
     display: flex;
     flex-direction: row;
@@ -197,6 +188,10 @@ section {
 
 h2 #sec1 {
     background-color: #000814;
+}
+
+.sec1 p {
+    padding-top: 25px;
 }
 
 .quienessomos {
@@ -219,13 +214,7 @@ h2 #sec1 {
 
 }
 
-.sec1 p {
-    padding-top: 25px;
-    /*animation: fadeInOut 8s forwards;
-    animation-iteration-count: 1;
-    animation-fill-mode: backwards;*/
-
-}
+/**************************************************************************************************************************************************************************/
 
 .sec2 {
     background-color: #000814;
@@ -241,11 +230,6 @@ iframe {
     padding-bottom: 0px;
     padding-left: 150px;
     width: 100%;
-
-
-    /*animation: fadeInOut 8s forwards;
-    animation-iteration-count: 1;
-    animation-fill-mode: backwards;*/
 
 }
 
@@ -267,6 +251,8 @@ iframe {
 
 }
 
+/**************************************************************************************************************************************************************************/
+
 .sec3 {
 
     background-color: #000814;
@@ -280,14 +266,6 @@ iframe {
 
 }
 
-.sec4{
-    padding-top: 150px;
-    padding-right: 100px;
-    padding-bottom: 150px;
-    padding-left: 100px;
-    display: grid;
-}
-
 .nuestrosclientes_p {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -298,9 +276,6 @@ iframe {
     font-weight: lighter;
     float: none;
 
-    /*animation: fadeInOut 8s forwards;
-    animation-iteration-count: 1;
-    animation-fill-mode: backwards;*/
 }
 
 .nuestrosclientes_nombre {
@@ -312,12 +287,9 @@ iframe {
     align-items: center;
     text-align: center;
 
-    /*animation: fadeInOut 8s forwards;
-    animation-iteration-count: 1;
-    animation-fill-mode: backwards;*/
-
-
 }
+
+/**************************************************************************************************************************************************************************/
 
 .sec4 {
 
@@ -382,6 +354,7 @@ iframe {
     font-weight: 100;
 }
 
+/**************************************************************************************************************************************************************************/
 
 footer {
     height: fit-content;
@@ -439,6 +412,9 @@ hr {
     color: #003566;
     background-color: #000814;
 }
+
+/**************************************************************************************************************************************************************************/
+
 
 @media screen and (min-width:1440px) {
     
@@ -809,10 +785,3 @@ hr {
     /**************************************************************************************************************************************************************************/
 
     }
-/*en cada bp los valores son:
-padding top/bottom/left/right: 100/200px-
-5px menos en cada titulo/subtitulo
-5px menos en texto
-en los h1/h2 padding de 25px-*/
-
-/*Maniana hacer media query para 1024px en adelante, y pulir el codigo*/
