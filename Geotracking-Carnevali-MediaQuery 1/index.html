@@ -5,130 +5,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet1" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="contenedor">
+    
+<!--**************************************************************************************************************************************************************************-->
+    
+    <header class="jumbotron">
+        <div class="container">
 
-    <header>
-        <div class="logo">Geo<span>tracking</span></div>
-        <!--<div class="slogan">    <h1>Si tu problema es la logística, nosotros somos la solución</h1></div>-->
-        <nav class="nav1">
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#sec1">Quienes somos</a></li>
-                    <a href="#sec2">Como funciona</a></li>
-                    <a href="#sec3">Nuestros clientes</a></li>
-                    <a href="#sec4">Contacto</a></li>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            <h1 class="encabezado">Geo<span>tracking</span></h1>
 
-    <div class="slogan">    <h1>Si tu problema es la logística, nosotros somos la solución</h1></div>
-    <div class="img">
-         <img src="imagenes/businessman-working-on-laptop.jpg" alt="" width="100%" height="fit-content">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler justify-content-left" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec1">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec2">Como Funciona</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec3">Nuestros Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sec4">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
         </div>
 
-    <main>
-    </main>
+    </header>
 
-        <h2 id="sec1">¿Quiénes Somos?</h2>
-        <section class="sec sec1">
-            <div class="quienessomos" data-aos="flip-down" data-aos-duration="1000">
-                <!--<center>
-                <img src="imagenes/geotracking.jpg" width="auto" height="auto">
-                </center>-->
-                    </aside>
-                    
-                    <p>
-                        Somos una empresa dedicada al tracking en tiempo real de transportes, tanto en áreas nacionales, como trasnacionales. Fundado por un grupo de programadores que tuvieron la idea de globalizar y evolucionar sobre la logística de empresas, para así <b>obtener en tiempo récord la ubicación de toda una red de transportes</b>, y que de esta forma sea mucho más eficiente poder realizar planes de trazabilidad de rutas.
+<!--**************************************************************************************************************************************************************************-->
+
+    <div class="container-fluid-slogan">
+        <h1 class="slogan">Si tu problema es la logística, nosotros somos la solución</h1>
+    </div>
+    <div class="img">
+        <img src="imagenes/businessman-working-on-laptop.jpg" alt="" width="100%" height="fit-content">
+    </div>
+
+<!--**************************************************************************************************************************************************************************-->
+
+    <h2 id="sec1">¿Quiénes Somos?</h2>
+    <section class="sec sec1">
+        <div class="container-fluid quienessomos">
+            <div class="row">
+                <div class="nleft col-md-6" data-aos="flip-down" data-aos-duration="1000">
+                </div>
+                <div class="nright col-md-6" data-aos="flip-down" data-aos-duration="2000">
+                    <p class="quienessomos_p">
+                        Somos una empresa dedicada al tracking en tiempo real de transportes, tanto en áreas nacionales,
+                        como trasnacionales. Fundado por un grupo de programadores que tuvieron la idea de globalizar y
+                        evolucionar sobre la logística de empresas, para así <b>obtener en tiempo récord la ubicación de
+                            toda una red de transportes</b>, y que de esta forma sea mucho más eficiente poder realizar
+                        planes de trazabilidad de rutas.
                         <br><br><br>
-                        Nacimos en el 2022 a partir del establecimiento de una vision clara, <b>reducir la emisión de carbono, y maximizar la eficiencia logística de las empresas</b>, entre otras cosas.
+                        Nacimos en el 2022 a partir del establecimiento de una vision clara, <b>reducir la emisión de
+                            carbono, y maximizar la eficiencia logística de las empresas</b>, entre otras cosas.
                     </p>
-        </section>
-        </section>
 
-        <h2 id="sec2"> ¿Cómo funciona Geotracking? </h2>
-        <section class="sec sec2">
-           
-    <p class="comofunciona_p" data-aos="flip-down" data-aos-duration="1000">
-        Su función es muy sencilla, a través de un sistema de mapeo global de Google Maps (donde la fuente puede ser un celular, o un chip insertado en la flota) <b>permite al usuario localizar y visualizar la ubicación en tiempo real del vehículo</b>, para así poder saber
-        dónde se encuentra, y por si éste requiere algún redireccionamiento.
+                </div>
 
+            </div>
+
+    </section>
+
+<!--**************************************************************************************************************************************************************************-->
+
+    <h2 id="sec2"> ¿Cómo funciona Geotracking? </h2>
+    <section class="sec sec2">
+        <div class="container-fluid comofunciona">
+            <div class="row">
+                <div class="nleft2 col-md-6">
+                    <div style="text-align: left;">
+                        <iframe width="100%" height="468" src="https://www.youtube.com/embed/uOfZo6ilhIw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen data-aos="flip-down" data-aos-duration="1000"></iframe></div>
+                </div>
+
+                <div class="nright col-md-6">
+
+                    <p class="comofunciona_p"data-aos="flip-down" data-aos-duration="2000">
+                        Su función es muy sencilla, a través de un sistema de mapeo global de Google Maps (donde la
+                        fuente
+                        puede ser un celular, o un chip insertado en la flota) <b>permite al usuario localizar y
+                            visualizar
+                            la ubicación en tiempo real del vehículo</b>, para así poder saber
+                        dónde se encuentra, y por si éste requiere algún redireccionamiento.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+</section>
+
+<!--**************************************************************************************************************************************************************************-->
+
+    <h2 id="sec3">Nuestros Clientes</h2>
+    <section class="sec sec3">
+        <p class="nuestrosclientes_p" data-aos="flip-down" data-aos-duration="1000">
+            Soy dueño de una logística que transporta vinos, siempre fui de la vieja escuela en cuanto a comunicación y
+            recorrido, todo a través de llamados telefónicos. Mucha ansiedad porque por momentos no tenía novedades
+            respecto al transporte, se demoraba para las entregas, sufriamos mucho el tránsito de CABA. Hasta que Gianni
+            me ofreció probar sin costo Geotracking, y desde ahí el contraste fue enorme. Trazabilidad, optimización de
+            tiempo, eficiencia absoluta.
+            <div class="nuestrosclientes_nombre" data-aos="flip-down" data-aos-duration="2000">
+                Emmanuel Agüero, CEO de Transportes del Sur SA.</div>
+
+
+    </section>
+
+<!--**************************************************************************************************************************************************************************-->
+
+    <h2 id="sec4">Contacto</h2>
+
+    <p class="subtitle">
+        Dejanos tus datos y un asesor se va a contactar con vos.
     </p>
 
-    <div style="text-align: center">
-    <iframe width="100%" height="350" src="https://www.youtube.com/embed/uOfZo6ilhIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-aos="flip-down" data-aos-duration="2000"></iframe></div>
 
-
-
-        </section>
-        <h2 id="sec3">Nuestros Clientes</h2>
-        <section class="sec sec3">
-            <p class="nuestrosclientes_p" data-aos="flip-down" data-aos-duration="1000">
-                Soy dueño de una logística que transporta vinos, siempre fui de la vieja escuela en cuanto a comunicación y recorrido, todo a través de llamados telefónicos. Mucha ansiedad porque por momentos no tenía novedades respecto al transporte, se demoraba para las entregas, sufriamos mucho el tránsito de CABA. Hasta que Gianni me ofreció probar sin costo Geotracking, y desde ahí el contraste fue enorme. Trazabilidad, optimización de tiempo, eficiencia absoluta.
-                <div class="nuestrosclientes_nombre" data-aos="flip-down">
-                    Emmanuel Agüero, CEO de Transportes del Sur SA.</div>
-
-
-        </section>
-        <h2 id="sec4">Contacto</h2>
-        
-        <p class="subtitle">
-            Dejanos tus datos y un asesor se va a contactar con vos.
-        </p>
-
-
-        <section class="sec sec4"><div class="form" data-aos="flip-down" data-aos-duration="1000">
+    <section class="sec sec4">
+        <div class="form" data-aos="flip-down" data-aos-duration="2000">
 
             <form action="enviar.php" method="post" enctype="text/plain">
-        <label for="name">Nombre</label><br>
-        <input type="text" name="Nombre" required><br><br>
-        <label for="apellido">Apellido</label><br>
-        <input type="text" apellido="Apellido" required><br><br>
-        <label for="email">E-Mail</label><br>
-        <input type="email" email="E-Mail"><br><br>
-        <label for="actualsituation">¿Cuál es su situación laboral?</label><br>
-        <select name="menu">
-            <option value="0">...</option>
-            <option value="1">Particular</option>
-            <option value="2">Relacion de dependencia</option>
+                <label for="name">Nombre</label><br>
+                <input type="text" name="Nombre" required><br><br>
+                <label for="apellido">Apellido</label><br>
+                <input type="text" apellido="Apellido" required><br><br>
+                <label for="email">E-Mail</label><br>
+                <input type="email" email="E-Mail"><br><br>
+                <label for="actualsituation">¿Cuál es su situación laboral?</label><br>
+                <select name="menu">
+                    <option value="0">...</option>
+                    <option value="1">Particular</option>
+                    <option value="2">Relacion de dependencia</option>
 
-        </select><br><br>
-        <label for="comentarios">Consulta</label><br>
-        <textarea name="comentarios" rows="4" cols="20" placeholder="Deje aqui su comentario"></textarea><br><br>
-        <label for="terms">Acepto las bases y condiciones</label>
-        <input type="checkbox" name="terms" required><BR><BR>
+                </select><br><br>
+                <label for="comentarios">Consulta</label><br>
+                <textarea name="comentarios" rows="4" cols="20"
+                    placeholder="Deje aqui su comentario"></textarea><br><br>
+                <label for="terms">Acepto las bases y condiciones</label>
+                <input type="checkbox" name="terms" required><BR><BR>
 
-        <input type="reset" value="Limpiar formulario">
+                <input type="reset" value="Limpiar formulario">
 
-        <input type="submit" value="Enviar">
-
-
-    </div></section>
-
-        <footer>
-
-            <p>Desde 2022</p>
-            <div class="redes">
-               <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-            </div>
-            
-        </footer>
-        <a href="#" class="subir"><i class="fa-solid fa-angles-up"></i></div>
+                <input type="submit" value="Enviar">
 
 
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
- <script>
- AOS.init();
- </script>
-        </body>
+        </div>
+    </section>
+
+<!--**************************************************************************************************************************************************************************-->
+
+    <footer>
+
+        <p>Desde 2022</p>
+        <div class="redes">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+    </footer>
+    <a href="#" class="subir"><i class="fa-solid fa-angles-up"></i></div>
+
+<!--**************************************************************************************************************************************************************************-->
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+            integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+        </script>
+</body>
 
 </html>

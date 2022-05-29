@@ -7,108 +7,73 @@
 
 /**************************************************************************************************************************************************************************/
 
+.jumbotron{
+    background-color: #457b9d;
+    padding: 20px;
+    margin: 0;
+    height: fit-content !important;
+}
+
+nav{
+  background-color: #457b9d;  
+}
+
+.navbar{
+    background-color: #457b9d !important;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.nav-link{
+    color: #f1faee;
+    word-spacing: normal;
+}
+
+.nav-link:hover{
+    color: #000814;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+.encabezado{
+    background-color: #457b9d;
+    height: fit-content;
+    padding-top: 0;
+    color: #f1faee;
+    font-weight: bold;
+}
+.encabezado span{
+    color: #003566;
+    font-weight: bold;
 }
 
 header {
     height: fit-content;
     width: 100%;
+    padding: 10px;
     background-color: #457b9d;
     font-size: 30px;
-    padding: 10px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: fixed;
     z-index: 1;
 }
 
-.logo {
-    float: Center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #003566;
-    word-spacing: none;
-    font-weight: bold;
-}
-
-
 .slogan {
-    font-size: 20px;
+    font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #1d3557;
     width: 100%;
     text-align: center;
     background-color: #000814;
     color: #f1faee;
-    padding-top: 150px;
-    padding-right: 100px;
-    padding-left: 100px;
-
-
-}
-
-
-.logo span {
-    color: #f1faee;
-    word-spacing: none;
-    font-weight: bold;
-}
-
-.nav1 {
-    float: center;
-}
-
-.nav1 ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.nav1 a {
-    text-decoration: none;
-    color: beige;
-    text-transform: capitalize;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-}
-
-.nav1 a:hover {
-    color: #000814;
-
-}
-
-main {
-    width: 100%;
-    background-color: #000814;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-
-}
-
-.call h1 {
-    color: #f1faee;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: lighter;
-    font-size: 15px;
-
-
-}
-
-.call p {
-    margin-top: 40px;
-    text-align: justify;
-}
-
-.call a {
-    background-color: #000814;
-    height: 40px;
-    width: 80px;
-    padding: 10px 20px;
-    border-radius: 5px;
-
-
+    padding-top: 250px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    margin: 0;
 }
 
 /**************************************************************************************************************************************************************************/
@@ -116,15 +81,12 @@ main {
 h1 {
     /*Color de los inicios de pagina*/
     text-align: center;
-    background-color: #000814e9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
     color: #f1faee;
     font-weight: bold;
     height: fit-content;
     background-color: #000814;
-    
-
 }
 
 h2 {
@@ -135,9 +97,9 @@ h2 {
     color: #f1faee;
     font-weight: bold;
     height: fit-content;
-    padding-top: 150px;
+    padding-top: 225px !important;
     animation-fill-mode: inherit;
-
+    margin: 0;
 }
 
 section {
@@ -149,14 +111,12 @@ section {
     padding-bottom: 150px;
     background-color: #000814;
     
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     text-align: center;
     display: grid;
-
 }
 
 .img {
@@ -186,34 +146,36 @@ section {
 
 }
 
-h2 #sec1 {
-    background-color: #000814;
-}
-
 .sec1 p {
     padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .quienessomos {
-
     display: flex;
     flex-direction: column;
     align-content: space-between;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     text-align: justify;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 150px;
     color: #f1faee;
     font-weight: lighter;
     background-color: #000814;
     width: 100%;
     display: grid;
-
-
 }
 
+.nleft{
+    background-image: url(imagenes/depositphotos_58729343-stock-photo-smiling-young-black-woman-working.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-color: #000814;
+    background-position: center;
+}
 /**************************************************************************************************************************************************************************/
 
 .sec2 {
@@ -226,29 +188,22 @@ h2 #sec1 {
 }
 
 iframe {
-    padding-right: 150px;
+    padding-right: 100px;
     padding-bottom: 0px;
-    padding-left: 150px;
+    padding-left: 100px;
     width: 100%;
-
 }
 
 .comofunciona_p {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    padding-top: 50px;
+    font-size: 15px;
+    padding-top: 25px;
     padding-bottom: 100px;
-    padding-right: 100px;
-    padding-left: 100px;
     text-align: justify;
     color: #f1faee;
     font-weight: lighter;
-    background-color: #00081407;
-    float: left;
-    width: 100%;
-
-
+    background-color: #000814;
 }
 
 /**************************************************************************************************************************************************************************/
@@ -261,27 +216,22 @@ iframe {
     padding-bottom: 125px;
     padding-left: 100px;
     display: grid;
-
-
-
 }
 
 .nuestrosclientes_p {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     text-align: justify;
     padding: 100px;
     color: #f1faee;
     font-weight: lighter;
-    float: none;
-
 }
 
 .nuestrosclientes_nombre {
     padding-bottom: 150px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     color: #f1faee;
     justify-content: center;
     align-items: center;
@@ -304,6 +254,7 @@ iframe {
 }
 
 .subtitle {
+    margin: 0;
     text-align: center;
     background-color: #000814;
     color: #f1faee;
@@ -313,12 +264,6 @@ iframe {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-weight: lighter;
-
-}
-
-.h2 #sec4 {
-    padding-top: 0px;
-
 }
 
 .form {
@@ -332,14 +277,12 @@ iframe {
     padding-bottom: 50px;
     color: #f1faee;
     font-weight: bold;
-    float: center;
     background-color: #457b9d17;
     border: 10px;
     border-radius: 5px;
     height: fit-content;
     float: left;
     width: fit-content;
-
 }
 
 .name {
@@ -372,7 +315,6 @@ footer i {
     letter-spacing: 20px;
     text-align: center;
     word-spacing: 10px;
-
 }
 
 footer p {
@@ -382,7 +324,6 @@ footer p {
     font-weight: bold;
     font-size: 10px;
     text-align: center;
-
 }
 
 .subir {
@@ -397,8 +338,6 @@ footer p {
     font-size: 25px;
     border-radius: 50%;
     box-shadow: 0 0 10px #f1faee;
-
-
 }
 
 i {
@@ -453,7 +392,7 @@ hr {
     }
 
     h2{
-        padding-top: 150px;
+        padding-top: 175px !important;
     }
 
 /**************************************************************************************************************************************************************************/
@@ -474,7 +413,7 @@ hr {
     .sec2{
         padding-top: 100px;
         padding-right: 100px;
-        padding-bottom: 150px;
+        padding-bottom: 200px;
         padding-left: 100px;
     }
 
@@ -483,9 +422,9 @@ hr {
     }
     
     iframe{
-        padding-top: px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-top: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
         padding-bottom: 0px;
     }
 
@@ -497,7 +436,12 @@ hr {
         padding-bottom: 150px;
         padding-left: 100px;
 }
-    .nuestrosclientes_nombre{
+    
+.nuestrosclientes_p{
+    padding-top: 0px;
+}
+
+.nuestrosclientes_nombre{
     font-size: 10px;
 }
 
@@ -509,9 +453,11 @@ hr {
         padding-bottom: 150px;
         padding-left: 100px;
     }
+
     .subtitle{
         padding-bottom: 0px;
     }
+
     .form{
         padding-top: 25px;
     }
@@ -525,15 +471,16 @@ hr {
         font-size: 35px;
         height: fit-content;
     }
-
+    .slogan{
+        padding-top: 175px;
+    }
 
     h2 {
-        padding-top: 150px;
+        padding-top: 175px !important;
         padding-bottom: 0px;
         font-size: 30px;
     }
 
-    
     .img {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -544,41 +491,46 @@ hr {
         padding-right: 100px;
     }
 
-        /**************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************/
     
     .sec1 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding-top: 100px;
+        padding-top: 50px;
         padding-right: 75px;
         padding-bottom: 100px;
         padding-left: 75px;
     }
 
     .quienessomos {
-        font-size: 20px;
+        font-size: 15px;
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 0px;
+        padding-top: 0;
+    }
+
+    .quienessomos_p{
+        padding-top: 0px;
     }
     
-        /**************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************/
     
-     
-    .sec2 {
+     .sec2 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding-top: 100px;
+        padding-top: 75px;
         padding-right: 75px;
         padding-bottom: 50px;
         padding-left: 75px;
     }
 
     .comofunciona_p {
-        font-size: 20px;
-        padding-top: 50px;
+        font-size: 15px;
+        padding-top: 25px;
         padding-left: 0px;
         padding-right: 0px;
+        padding-bottom: 25px;
     }
 
     iframe{
@@ -588,29 +540,33 @@ hr {
         padding-bottom: 0px;
         height: 300px;
     }
-        /**************************************************************************************************************************************************************************/  
+
+/**************************************************************************************************************************************************************************/  
 
     .sec3 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding-top: 100px;
+        padding-top: 75px;
         padding-right: 75px;
         padding-bottom: 100px;
         padding-left: 75px;
     }
 
     .nuestrosclientes_nombre {
-        font-size: 10px;
+        font-size: 12px;
         padding-bottom: 200px;
     }
 
     .nuestrosclientes_p {
-        font-size: 20px;
+        font-size: 15px;
         padding-left: 0;
         padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 50px;
+        margin: 0;
     }
 
-        /**************************************************************************************************************************************************************************/   
+/**************************************************************************************************************************************************************************/   
    
     .sec4 {
         display: grid;
@@ -621,9 +577,12 @@ hr {
         padding-left: 75px;
     }
 
+    .subtitle{
+        padding-top: 75px;
+    }
 
     .form {
-        font-size: 15px;
+        font-size: 10px;
         text-align: left;
         padding-left: 10px;
         padding-right: 10px;
@@ -639,36 +598,39 @@ hr {
 
 @media screen and (min-width:320px) and (max-width:767px) {
     
-        /**************************************************************************************************************************************************************************/    
+/**************************************************************************************************************************************************************************/    
     
-    header {
-        width: 100%;
+    .jumbotron {
         height: fit-content;
-        padding: 5px;
+        padding: 10px;
         font-size: 30px;
         text-align: center;
         position: fixed;
     }
 
+    .navbar{
+        min-height: 0;
+        padding: 0;
+    }
+    .nav-link{
+        padding: 2px;
+    }
+
     .slogan{
         display: flex;
-        padding-top: 350px;
+        padding-top: 250px;
         padding-right: 10px;
         padding-left: 10px;
-        padding-bottom: 250px;
+        padding-bottom: 175px;
         height: fit-content;
         justify-content: center;
         align-items: center;
         align-content: center;
+        font-size: 25px;
     }
 
-    h1 {
-        font-size: 20px;
-        width: 100%;
-        align-items: center;
-        height: fit-content;
-        padding-bottom: 0px;
-
+    .encabezado {
+        font-size: 30px;
     }
 
     .img{
@@ -676,12 +638,12 @@ hr {
     }
 
     h2{
-        padding-top: 150px;
+        padding-top: 250px !important;
         padding-bottom: 0px;
         font-size: 18px;
     }
 
-        /**************************************************************************************************************************************************************************/    
+/**************************************************************************************************************************************************************************/    
 
     .sec1 {
         display: grid;
@@ -692,7 +654,6 @@ hr {
         padding-bottom: 75px;
     }
 
-
     .quienessomos {
         padding-top: 50px;
         padding-left: 10px;
@@ -701,7 +662,7 @@ hr {
         font-size: 12px;
     }
 
-        /**************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************/
 
     .sec2 {
         display: grid;
@@ -711,6 +672,7 @@ hr {
         padding-left: 10px;
         padding-bottom: 75px;
     }
+
     .comofunciona_p {
         padding-top: 50px;
         padding-left: 10px;
@@ -718,6 +680,7 @@ hr {
         padding-bottom: 25px;
         font-size: 12px;
     }
+
     iframe{
         padding-left: 15px;
         padding-right: 15px;
@@ -726,7 +689,7 @@ hr {
         height: 210px;
     }
 
-        /**************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************/
 
     .sec3{
         display: grid;
@@ -750,7 +713,7 @@ hr {
         padding-bottom: 100px;
     }
 
-        /**************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************/
 
     .sec4{
         display: grid;
@@ -762,7 +725,7 @@ hr {
     }
     
     .subtitle{
-        padding-top: 100px;
+        padding-top: 50px;
         font-size: 18px;
         width: 100%;
         padding-left: 10px;
@@ -771,16 +734,16 @@ hr {
     }
 
     .form {
-        font-size: 12px;
+        font-size: 10px;
         text-align: left;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-weight: bold;
         height: fit-content;
         width: fit-content;
-}
+    }
 
     /**************************************************************************************************************************************************************************/
 
