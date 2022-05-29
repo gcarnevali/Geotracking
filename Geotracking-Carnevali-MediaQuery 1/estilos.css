@@ -138,7 +138,7 @@ section {
     align-items: flex-start;
     background-color: #000814;
     background-position: center;
-    padding-top: 150px;
+    padding-top: 125px;
     padding-right: 100px;
     padding-bottom: 150px;
     padding-left: 100px;
@@ -180,7 +180,7 @@ section {
 
 .sec2 {
     background-color: #000814;
-    padding-top: 150px;
+    padding-top: 125px;
     padding-right: 100px;
     padding-bottom: 150px;
     padding-left: 100px;
@@ -211,7 +211,7 @@ iframe {
 .sec3 {
 
     background-color: #000814;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-right: 100px;
     padding-bottom: 125px;
     padding-left: 100px;
@@ -223,7 +223,7 @@ iframe {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     text-align: justify;
-    padding: 100px;
+    padding: 25px;
     color: #f1faee;
     font-weight: lighter;
 }
@@ -245,7 +245,7 @@ iframe {
 
     background-color: #000814;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 100px;
@@ -258,7 +258,7 @@ iframe {
     text-align: center;
     background-color: #000814;
     color: #f1faee;
-    padding-top: 100px;
+    padding-top: 125px;
     padding-right: 50px;
     padding-left: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -271,10 +271,7 @@ iframe {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     text-align: left;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 25px;
     color: #f1faee;
     font-weight: bold;
     background-color: #457b9d17;
@@ -297,6 +294,10 @@ iframe {
     font-weight: 100;
 }
 
+textarea::placeholder{
+    font-size: 12px;
+    
+}
 /**************************************************************************************************************************************************************************/
 
 footer {
@@ -455,11 +456,13 @@ hr {
     }
 
     .subtitle{
+        padding-top: 100px;
         padding-bottom: 0px;
     }
 
     .form{
-        padding-top: 25px;
+        padding: 15px;
+        font-size: 12px;
     }
     }
 
