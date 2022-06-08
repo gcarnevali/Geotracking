@@ -1,0 +1,524 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Variables*/
+/*HEADER*************************************************************************************************************************************************************************/
+.jumbotron {
+  background-color: #457b9d;
+  padding: 20px;
+  margin: 0;
+  height: fit-content !important; }
+  .jumbotron nav {
+    background-color: #457b9d; }
+    .jumbotron nav .navbar {
+      background-color: #457b9d !important;
+      font-size: 15px;
+      justify-content: center; }
+    .jumbotron nav .nav-link {
+      color: #f1faee;
+      word-spacing: normal; }
+      .jumbotron nav .nav-link:hover {
+        color: #000814; }
+  .jumbotron html {
+    scroll-behavior: smooth; }
+  .jumbotron .encabezado {
+    background-color: #f1faee;
+    height: fit-content;
+    padding-top: 0;
+    color: #f1faee;
+    font-weight: bold; }
+    .jumbotron .encabezado .encabezado span {
+      color: #457b9d;
+      font-weight: bold; }
+  .jumbotron header {
+    height: fit-content;
+    width: 100%;
+    padding: 10px;
+    background-color: #457b9d;
+    font-size: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    z-index: 1; }
+
+/*HOME*************************************************************************************************************************************************************************/
+section {
+  height: fit-content;
+  width: 100%;
+  padding-top: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 150px;
+  background-color: #000814;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  display: grid; }
+  section .slogan {
+    font: bold, 40px, #f1faee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    text-align: center;
+    background-color: #000814;
+    padding-top: 250px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    margin: 0; }
+  section h1 {
+    /*Color de los inicios de pagina*/
+    font: bold, 40px, #f1faee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: fit-content;
+    background-color: #000814; }
+  section h2 {
+    font: bold, 30px, #f1faee;
+    background-color: #000814;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: fit-content;
+    padding-top: 225px !important;
+    animation-fill-mode: inherit;
+    margin: 0; }
+  section .img {
+    background-color: #000814;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+    padding-left: 100px;
+    text-align: center; }
+
+/*QUIENES SOMOS*************************************************************************************************************************************************************************/
+.sec1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  background-color: #000814;
+  background-position: center;
+  padding-top: 125px;
+  padding-right: 100px;
+  padding-bottom: 150px;
+  padding-left: 100px;
+  display: grid; }
+  .sec1 .quienessomos {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font: lighter, 15px, #f1faee;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 150px;
+    background-color: #000814;
+    width: 100%;
+    display: grid; }
+  .sec1 .nleft {
+    background-image: url(imagenes/depositphotos_58729343-stock-photo-smiling-young-black-woman-working.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: #000814;
+    background-position: center; }
+
+/*COMO FUNCIONA*************************************************************************************************************************************************************************/
+.sec2 {
+  background-color: #000814;
+  padding-top: 125px;
+  padding-right: 100px;
+  padding-bottom: 150px;
+  padding-left: 100px;
+  display: grid; }
+  .sec2 iframe {
+    padding-right: 100px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    width: 100%; }
+  .sec2 .comofunciona_p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: lighter, 15px, #f1faee;
+    padding-top: 25px;
+    padding-bottom: 100px;
+    text-align: justify;
+    background-color: #000814; }
+
+/*NUESTROS CLIENTES*************************************************************************************************************************************************************************/
+.sec3 {
+  background-color: #000814;
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-bottom: 125px;
+  padding-left: 100px;
+  display: grid; }
+  .sec3 .nuestrosclientes_p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: lighter, 15px, #f1faee;
+    text-align: justify;
+    padding: 25px; }
+    .sec3 .nuestrosclientes_p .nuestrosclientes_nombre {
+      padding-bottom: 150px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font: lighter, 12px, #f1faee;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+
+/*CONTACTO*************************************************************************************************************************************************************************/
+.sec4 {
+  background-color: #000814;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 100px;
+  display: grid; }
+  .sec4 .subtitle {
+    margin: 0;
+    padding-top: 125px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color: #000814;
+    font: lighter, 20px, #f1faee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; }
+  .sec4 .form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: lighter, 15px, #f1faee;
+    text-align: left;
+    padding: 25px;
+    background-color: #457b9d;
+    border: 10px;
+    border-radius: 5px;
+    height: fit-content;
+    float: left;
+    width: fit-content; }
+    .sec4 .form .name {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 15px;
+      font-weight: 100; }
+    .sec4 .form .type {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 15px;
+      font-weight: 100; }
+    .sec4 .form textarea::placeholder {
+      font-size: 12px; }
+
+/*FOOTER*************************************************************************************************************************************************************************/
+footer {
+  height: fit-content;
+  width: 100%;
+  background-color: #457b9d;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  footer footer i {
+    font-size: 50px;
+    color: #003566;
+    letter-spacing: 20px;
+    text-align: center;
+    word-spacing: 10px; }
+  footer footer p {
+    margin-bottom: 20px;
+    color: #f1faee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center; }
+  footer .subir {
+    height: 50px;
+    width: 50px;
+    background-color: #457b9d;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #f1faee; }
+  footer i {
+    padding-top: 5px;
+    color: #000814;
+    text-align: center; }
+  footer hr {
+    border-style: groove;
+    color: #003566;
+    background-color: #000814; }
+
+/*MEDIA QUERYS*************************************************************************************************************************************************************************/
+@media screen and (min-width: 1440px) {
+  h1 {
+    padding-top: 100px; }
+  img {
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 0px;
+    padding-left: 100px;
+    background-color: #000814; }
+  .nuestrosclientes_nombre {
+    padding-bottom: 300px; }
+  .quienessomos {
+    padding-bottom: 375px; } }
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .img {
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+    padding-left: 100px; }
+  h2 {
+    padding-top: 175px !important; }
+  /**************************************************************************************************************************************************************************/
+  .sec1 {
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 150px;
+    padding-left: 100px; }
+  .quienessomos {
+    padding-bottom: 350px; }
+  /**************************************************************************************************************************************************************************/
+  .sec2 {
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+    padding-left: 100px; }
+  .comofunciona_p {
+    padding-bottom: 50px; }
+  iframe {
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0px; }
+  /**************************************************************************************************************************************************************************/
+  .sec3 {
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 150px;
+    padding-left: 100px; }
+  .nuestrosclientes_p {
+    padding-top: 0px; }
+  .nuestrosclientes_nombre {
+    font-size: 10px; }
+  /**************************************************************************************************************************************************************************/
+  .sec4 {
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 150px;
+    padding-left: 100px; }
+  .subtitle {
+    padding-top: 100px;
+    padding-bottom: 0px; }
+  .form {
+    padding: 15px;
+    font-size: 12px; } }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /**************************************************************************************************************************************************************************/
+  h1 {
+    font-size: 35px;
+    height: fit-content; }
+  .slogan {
+    padding-top: 175px; }
+  h2 {
+    padding-top: 175px !important;
+    padding-bottom: 0px;
+    font-size: 30px; }
+  .img {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #000814;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px; }
+  /**************************************************************************************************************************************************************************/
+  .sec1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 50px;
+    padding-right: 75px;
+    padding-bottom: 100px;
+    padding-left: 75px; }
+  .quienessomos {
+    font-size: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0px;
+    padding-top: 0; }
+  .quienessomos_p {
+    padding-top: 0px; }
+  /**************************************************************************************************************************************************************************/
+  .sec2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 75px;
+    padding-right: 75px;
+    padding-bottom: 50px;
+    padding-left: 75px; }
+  .comofunciona_p {
+    font-size: 15px;
+    padding-top: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 25px; }
+  iframe {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 300px; }
+  /**************************************************************************************************************************************************************************/
+  .sec3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 75px;
+    padding-right: 75px;
+    padding-bottom: 100px;
+    padding-left: 75px; }
+  .nuestrosclientes_nombre {
+    font-size: 12px;
+    padding-bottom: 200px; }
+  .nuestrosclientes_p {
+    font-size: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 50px;
+    margin: 0; }
+  /**************************************************************************************************************************************************************************/
+  .sec4 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 75px;
+    padding-right: 100px;
+    padding-bottom: 75px;
+    padding-left: 75px; }
+  .subtitle {
+    padding-top: 75px; }
+  .form {
+    font-size: 10px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    border: 10px;
+    border-radius: 5px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /**************************************************************************************************************************************************************************/
+  .jumbotron {
+    height: fit-content;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    position: fixed; }
+  .navbar {
+    min-height: 0;
+    padding: 0; }
+  .nav-link {
+    padding: 2px; }
+  .slogan {
+    display: flex;
+    padding-top: 250px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 175px;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 25px; }
+  .encabezado {
+    font-size: 30px; }
+  .img {
+    display: none; }
+  h2 {
+    padding-top: 250px !important;
+    padding-bottom: 0px;
+    font-size: 18px; }
+  /**************************************************************************************************************************************************************************/
+  .sec1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 75px; }
+  .quienessomos {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    font-size: 12px; }
+  /**************************************************************************************************************************************************************************/
+  .sec2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 75px; }
+  .comofunciona_p {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    font-size: 12px; }
+  iframe {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    height: 210px; }
+  /**************************************************************************************************************************************************************************/
+  .sec3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 75px; }
+  .nuestrosclientes_p {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    font-size: 12px;
+    text-align: justify; }
+  .nuestrosclientes_nombre {
+    font-size: 8px;
+    padding-bottom: 100px; }
+  /**************************************************************************************************************************************************************************/
+  .sec4 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 75px; }
+  .subtitle {
+    padding-top: 50px;
+    font-size: 18px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .form {
+    font-size: 10px;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    height: fit-content;
+    width: fit-content; }
+  /**************************************************************************************************************************************************************************/ }
