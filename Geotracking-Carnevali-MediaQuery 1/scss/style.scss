@@ -1,3 +1,4 @@
+/*Selector Universal*/
 * {
     margin: 0;
     padding: 0;
@@ -5,40 +6,60 @@
 
 }
 
-/*Variables*/
-$color1:#000814;
-$color2:#003566;
-$color3:#457b9d;
-$color4:#f1faee;
+/*Mapping de Variables*/
+$colores: ("color1":#000814,
+    "color2":#003566,
+    "color3":#457b9d,
+    "color4":#f1faee,
+);
 
-$fuente-h1:bold, 40px, $color4;
-$fuente-h2:bold, 30px, $color4;
-$fuente-subtitulo:lighter, 20px, $color4;
-$fuente-textos:lighter, 15px, $color4;
-$fuente-otros1: lighter, 12px, $color4;
+/*Declaración de Extend*/
+%fuente {
+    justify-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Declaración de Mixing*/
+@mixin section {
+    height: fit-content;
+    width: 100%;
+    padding-top: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 150px;
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    background-color: map-get($colores, color1);
+}
 
 /*HEADER*************************************************************************************************************************************************************************/
 
-.jumbotron{
-    background-color: $color3;
+.jumbotron {
+    background-color: map-get($colores, "color3");
     padding: 20px;
     margin: 0;
     height: fit-content !important;
 
-    nav{
-        background-color: $color3;  
-      
-        .navbar{
-            background-color: $color3 !important;
+    nav {
+        background-color: map-get($colores, color3);
+
+        .navbar {
+            background-color: map-get($colores, color3) !important;
             font-size: 15px;
             justify-content: center;
         }
-        
-        .nav-link{
-            color: $color4;
+
+        .nav-link {
+            color: map-get($colores, color4);
             word-spacing: normal;
-            &:hover{
-                color:$color1;
+
+            &:hover {
+                color: map-get($colores, color1);
             }
         }
     }
@@ -46,16 +67,17 @@ $fuente-otros1: lighter, 12px, $color4;
     html {
         scroll-behavior: smooth;
     }
-    
-    .encabezado{
-        background-color: $color4;
+
+    .encabezado {
+        background-color: map-get($colores, color4);
+        ;
         height: fit-content;
         padding-top: 0;
-        color: $color4;
+        color: map-get($colores, color4);
         font-weight: bold;
-    
-        .encabezado span{
-            color: $color3;
+
+        .encabezado span {
+            color: map-get($colores, color3);
             font-weight: bold;
         }
     }
@@ -64,130 +86,109 @@ $fuente-otros1: lighter, 12px, $color4;
         height: fit-content;
         width: 100%;
         padding: 10px;
-        background-color: $color3;
+        background-color: map-get($colores, color3);
         font-size: 30px;
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         position: fixed;
         z-index: 1;
     }
-    
-
 }
 
 /*HOME*************************************************************************************************************************************************************************/
 
 section {
-    height: fit-content;
-    width: 100%;
-    padding-top: 150px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 150px;
-    background-color: $color1;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    display: grid;
+    @include section;
 
     .slogan {
-        font: $fuente-h1;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        width: 100%;
-        text-align: center;
-        background-color: $color1;
+        margin: 0;
         padding-top: 250px;
         padding-right: 50px;
         padding-left: 50px;
         padding-bottom: 10px;
-        margin: 0;
+        width: 100%;
+        background-color: map-get($colores, color1);
+        @extend %fuente;
+        font-size: 40px;
+        font-weight: bold;
     }
 
 
     h1 {
         /*Color de los inicios de pagina*/
-        font: $fuente-h1;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
         height: fit-content;
-        background-color: $color1;
+        background-color: map-get($colores, color1);
+        @extend %fuente;
+        font-size: 40px;
+        font-weight: bold;
     }
 
     h2 {
-        font: $fuente-h2;
-        background-color: $color1;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
+        margin: 0;
         height: fit-content;
         padding-top: 225px !important;
+        background-color: map-get($colores, color1);
         animation-fill-mode: inherit;
-        margin: 0;
+        @extend %fuente;
+        font-size: 30px;
+        font-weight: bold;
     }
 
     .img {
-        background-color: $color1;
+        background-color: map-get($colores, color1);
         padding-top: 100px;
         padding-right: 100px;
         padding-bottom: 200px;
         padding-left: 100px;
         text-align: center;
     }
-
 }
 
 /*QUIENES SOMOS*************************************************************************************************************************************************************************/
 
 .sec1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    background-color: $color1;
-    background-position: center;
+    @include section();
     padding-top: 125px;
     padding-right: 100px;
     padding-bottom: 150px;
     padding-left: 100px;
-    display: grid;
+    background-position: center;
+
 
     .quienessomos {
-        display: flex;
-        flex-direction: column;
-        align-content: space-between;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: justify;
-        font: $fuente-textos;
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 150px;
-        background-color: $color1;
         width: 100%;
+        background-color: map-get($colores, color1);
         display: grid;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        @extend %fuente;
+        text-align: justify;
+        font-size: 15px;
+        font-weight: lighter;
     }
 
-    .nleft{
+    .nleft {
         background-image: url(imagenes/depositphotos_58729343-stock-photo-smiling-young-black-woman-working.jpg);
-        background-size:auto;
+        background-size: auto;
         background-repeat: no-repeat;
-        background-color: $color1;
+        background-color: map-get($colores, color1);
         background-position: center;
     }
-
 }
 
 /*COMO FUNCIONA*************************************************************************************************************************************************************************/
 
 .sec2 {
-    background-color: $color1;
+    @include section();
     padding-top: 125px;
     padding-right: 100px;
     padding-bottom: 150px;
     padding-left: 100px;
-    display: grid;
+
 
     iframe {
         padding-right: 100px;
@@ -197,173 +198,169 @@ section {
     }
 
     .comofunciona_p {
-
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font: $fuente-textos;
         padding-top: 25px;
         padding-bottom: 100px;
+        background-color: map-get($colores, color1);
+        @extend %fuente;
         text-align: justify;
-
-        background-color: $color1;
+        font-weight: lighter;
+        font-size: 15px
     }
-
-
 }
 
 /*NUESTROS CLIENTES*************************************************************************************************************************************************************************/
 
 .sec3 {
-
-    background-color: $color1;
+    @include section();
     padding-top: 100px;
     padding-right: 100px;
     padding-bottom: 125px;
     padding-left: 100px;
-    display: grid;
 
     .nuestrosclientes_p {
-
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font: $fuente-textos;
-        text-align: justify;
         padding: 25px;
-    
+        @extend %fuente;
+        text-align: justify;
+        font-size: 15px;
+        font-weight: lighter;
+
         .nuestrosclientes_nombre {
+            padding-top: 50px;
             padding-bottom: 150px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font: $fuente-otros1;
+            @extend %fuente;
             justify-content: center;
             align-items: center;
-            text-align: center;
-        
+            font-size: 12px;
+            font-weight: lighter;
         }
     }
-
 }
 
 /*CONTACTO*************************************************************************************************************************************************************************/
 
 .sec4 {
-
-    background-color: $color1;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    @include section();
     padding-top: 50px;
     padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 100px;
-    display: grid;
 
     .subtitle {
         margin: 0;
         padding-top: 125px;
         padding-right: 50px;
         padding-left: 50px;
-        background-color: $color1;
-        font: $fuente-subtitulo;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-    
+        background-color: map-get($colores, color1);
+        @extend %fuente;
+        font-size: 20px;
+        font-weight: lighter;
     }
 
     .form {
-
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font: $fuente-textos;
-        text-align: left;
         padding: 25px;
-        background-color: $color3;
+        padding-left: 200px !important; 
+        padding-right: 200px !important;
         border: 10px;
         border-radius: 5px;
         height: fit-content;
         float: left;
-        width: fit-content;
-    
+        width: 0;
+        background-color: map-get($colores, color3);
+        @extend %fuente;
+        text-align: center;
+        font-size: 15px;
+        font-weight: lighter;
+
+        input{
+            width: 100%;
+        }
+        
+        label{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            font-weight: lighter; 
+        }
         .name {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 15px;
-            font-weight: 100;
+            font-size: 18px;
+            font-weight: lighter;
         }
-        
+
         .type {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 15px;
-            font-weight: 100;
+            font-size: 18px;
+            font-weight: lighter;
         }
-        
-        textarea::placeholder{
-            font-size: 12px;
-            
-        }
-    
 
+        textarea::placeholder {
+            font-size: 12px;
+            font-weight: lighter;
+        }
     }
-    
 }
 
 /*FOOTER*************************************************************************************************************************************************************************/
 
 footer {
+    padding: 20px;
     height: fit-content;
     width: 100%;
-    background-color: #457b9d;
-    text-align: center;
+    background-color: map-get($colores, color3);
+    @extend %fuente;
     font-size: 15px;
-    padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
 
     footer i {
+        color: map-get($colores, color2);
         font-size: 50px;
-        color: #003566;
+        word-spacing: 10px;
         letter-spacing: 20px;
         text-align: center;
-        word-spacing: 10px;
     }
-    
+
     footer p {
         margin-bottom: 20px;
-        color: #f1faee;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: map-get($colores, color4);
+        @extend %fuente;
         font-weight: bold;
         font-size: 10px;
-        text-align: center;
     }
-    
+
     .subir {
         height: 50px;
         width: 50px;
-        background-color: #457b9d;
         position: fixed;
         bottom: 40px;
         right: 40px;
-        text-align: center;
-        line-height: 40px;
-        font-size: 25px;
         border-radius: 50%;
-        box-shadow: 0 0 10px #f1faee;
-    }
-    
-    i {
-        padding-top: 5px;
-        color: #000814;
+        box-shadow: 0 0 10px map-get($colores, color4);
+        line-height: 40px;
+        background-color: map-get($colores, color3);
         text-align: center;
-    }
-    
-    hr {
-        border-style: groove;
-        color: #003566;
-        background-color: #000814;
+        font-size: 25px;
     }
 
+    i {
+        padding-top: 5px;
+        color: map-get($colores, color1);
+        text-align: center;
+    }
+
+    hr {
+        border-style: groove;
+        color: map-get($colores, color2);
+        background-color: map-get($colores, color1);
+    }
 }
 
 /*MEDIA QUERYS*************************************************************************************************************************************************************************/
 
 @media screen and (min-width:1440px) {
-    
-    h1{
+
+    h1 {
         padding-top: 100px;
     }
-    
+
     img {
         padding-top: 100px;
         padding-right: 100px;
@@ -371,22 +368,20 @@ footer {
         padding-left: 100px;
         background-color: #000814;
 
+    }
+
+    .nuestrosclientes_nombre {
+        padding-bottom: 300px;
+    }
+
+    .quienessomos {
+        padding-bottom: 375px;
+    }
 }
 
-.nuestrosclientes_nombre{
-    padding-bottom: 300px;
-}
 
-.quienessomos {
-    padding-bottom: 375px;
-}
+@media screen and (min-width:1024px) and (max-width:1439px) {
 
-
-}
-
-
-@media screen and (min-width:1024px) and (max-width:1439px){
-    
     .img {
         padding-top: 100px;
         padding-right: 100px;
@@ -394,11 +389,11 @@ footer {
         padding-left: 100px;
     }
 
-    h2{
+    h2 {
         padding-top: 175px !important;
     }
 
-/**************************************************************************************************************************************************************************/
+    /**************************************************************************************************************************************************************************/
 
     .sec1 {
         padding-top: 100px;
@@ -410,10 +405,10 @@ footer {
     .quienessomos {
         padding-bottom: 350px;
     }
-    
-/**************************************************************************************************************************************************************************/
 
-    .sec2{
+    /**************************************************************************************************************************************************************************/
+
+    .sec2 {
         padding-top: 100px;
         padding-right: 100px;
         padding-bottom: 200px;
@@ -423,60 +418,61 @@ footer {
     .comofunciona_p {
         padding-bottom: 50px;
     }
-    
-    iframe{
+
+    iframe {
         padding-top: 0px;
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 0px;
     }
 
-/**************************************************************************************************************************************************************************/
+    /**************************************************************************************************************************************************************************/
 
-    .sec3{
+    .sec3 {
         padding-top: 100px;
         padding-right: 100px;
         padding-bottom: 150px;
         padding-left: 100px;
-}
-    
-.nuestrosclientes_p{
-    padding-top: 0px;
-}
+    }
 
-.nuestrosclientes_nombre{
-    font-size: 10px;
-}
+    .nuestrosclientes_p {
+        padding-top: 0px;
+    }
 
-/**************************************************************************************************************************************************************************/
+    .nuestrosclientes_nombre {
+        font-size: 10px;
+    }
 
-    .sec4{
+    /**************************************************************************************************************************************************************************/
+
+    .sec4 {
         padding-top: 50px;
         padding-right: 100px;
         padding-bottom: 150px;
         padding-left: 100px;
     }
 
-    .subtitle{
+    .subtitle {
         padding-top: 100px;
         padding-bottom: 0px;
     }
 
-    .form{
+    .form {
         padding: 15px;
         font-size: 12px;
     }
-    }
+}
 
 @media screen and (min-width:768px) and (max-width:1023px) {
 
-        /**************************************************************************************************************************************************************************/
-    
+    /**************************************************************************************************************************************************************************/
+
     h1 {
         font-size: 35px;
         height: fit-content;
     }
-    .slogan{
+
+    .slogan {
         padding-top: 175px;
     }
 
@@ -496,8 +492,8 @@ footer {
         padding-right: 100px;
     }
 
-/**************************************************************************************************************************************************************************/
-    
+    /**************************************************************************************************************************************************************************/
+
     .sec1 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -515,13 +511,13 @@ footer {
         padding-top: 0;
     }
 
-    .quienessomos_p{
+    .quienessomos_p {
         padding-top: 0px;
     }
-    
-/**************************************************************************************************************************************************************************/
-    
-     .sec2 {
+
+    /**************************************************************************************************************************************************************************/
+
+    .sec2 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding-top: 75px;
@@ -538,7 +534,7 @@ footer {
         padding-bottom: 25px;
     }
 
-    iframe{
+    iframe {
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 0px;
@@ -546,7 +542,7 @@ footer {
         height: 300px;
     }
 
-/**************************************************************************************************************************************************************************/  
+    /**************************************************************************************************************************************************************************/
 
     .sec3 {
         display: grid;
@@ -571,8 +567,8 @@ footer {
         margin: 0;
     }
 
-/**************************************************************************************************************************************************************************/   
-   
+    /**************************************************************************************************************************************************************************/
+
     .sec4 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -582,7 +578,7 @@ footer {
         padding-left: 75px;
     }
 
-    .subtitle{
+    .subtitle {
         padding-top: 75px;
     }
 
@@ -596,15 +592,13 @@ footer {
         font-weight: bold;
         border: 10px;
         border-radius: 5px;
-
     }
-    
-    }
+}
 
 @media screen and (min-width:320px) and (max-width:767px) {
-    
-/**************************************************************************************************************************************************************************/    
-    
+
+/**************************************************************************************************************************************************************************/
+
     .jumbotron {
         height: fit-content;
         padding: 10px;
@@ -613,15 +607,16 @@ footer {
         position: fixed;
     }
 
-    .navbar{
+    .navbar {
         min-height: 0;
         padding: 0;
     }
-    .nav-link{
+
+    .nav-link {
         padding: 2px;
     }
 
-    .slogan{
+    .slogan {
         display: flex;
         padding-top: 250px;
         padding-right: 10px;
@@ -638,17 +633,17 @@ footer {
         font-size: 30px;
     }
 
-    .img{
+    .img {
         display: none;
     }
 
-    h2{
+    h2 {
         padding-top: 250px !important;
         padding-bottom: 0px;
         font-size: 18px;
     }
 
-/**************************************************************************************************************************************************************************/    
+/**************************************************************************************************************************************************************************/
 
     .sec1 {
         display: grid;
@@ -686,7 +681,7 @@ footer {
         font-size: 12px;
     }
 
-    iframe{
+    iframe {
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 25px;
@@ -696,7 +691,7 @@ footer {
 
 /**************************************************************************************************************************************************************************/
 
-    .sec3{
+    .sec3 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding-top: 50px;
@@ -704,7 +699,7 @@ footer {
         padding-left: 10px;
         padding-bottom: 75px;
     }
-    
+
     .nuestrosclientes_p {
         padding-top: 50px;
         padding-left: 10px;
@@ -713,14 +708,15 @@ footer {
         font-size: 12px;
         text-align: justify;
     }
-    .nuestrosclientes_nombre{
+
+    .nuestrosclientes_nombre {
         font-size: 8px;
         padding-bottom: 100px;
     }
 
 /**************************************************************************************************************************************************************************/
 
-    .sec4{
+    .sec4 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding-top: 50px;
@@ -728,8 +724,8 @@ footer {
         padding-left: 10px;
         padding-bottom: 75px;
     }
-    
-    .subtitle{
+
+    .subtitle {
         padding-top: 50px;
         font-size: 18px;
         width: 100%;
@@ -749,7 +745,6 @@ footer {
         height: fit-content;
         width: fit-content;
     }
+}
 
-    /**************************************************************************************************************************************************************************/
-
-    }
+/**************************************************************************************************************************************************************************/
