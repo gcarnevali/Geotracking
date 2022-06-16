@@ -1,4 +1,5 @@
 /*Selector Universal*/
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
 }
 
 /*Mapping de Variables*/
+
 $colores: ("color1":#000814,
     "color2":#003566,
     "color3":#457b9d,
@@ -14,6 +16,7 @@ $colores: ("color1":#000814,
 );
 
 /*Declaración de Extend*/
+
 %fuente {
     justify-content: center;
     text-align: center;
@@ -21,6 +24,7 @@ $colores: ("color1":#000814,
 }
 
 /*Declaración de Mixing*/
+
 @mixin section {
     height: fit-content;
     width: 100%;
@@ -279,17 +283,6 @@ section {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 18px;
             font-weight: lighter; 
-        }
-        .name {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 18px;
-            font-weight: lighter;
-        }
-
-        .type {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 18px;
-            font-weight: lighter;
         }
 
         textarea::placeholder {
