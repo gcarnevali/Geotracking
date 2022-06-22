@@ -8,7 +8,7 @@
 
 /*Mapping de Variables*/
 /*Declaración de Extend*/
-footer footer p, footer, .sec4 .form, .sec4 .subtitle, .sec3 .nuestrosclientes_p .nuestrosclientes_nombre, .sec3 .nuestrosclientes_p, .sec2 .comofunciona_p, .sec1 .quienessomos, section h2, section h1, section .slogan {
+footer footer p, footer, .sec4 .form, .sec4 .subtitle, .sec3 .nuestrosclientes_p .nuestrosclientes_nombre, .sec3 .nuestrosclientes_p, .sec2 .comofunciona_p, .sec1 .quienessomos_p, section h2, section h1, section .slogan {
   justify-content: center;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -146,14 +146,14 @@ section .img {
   align-items: flex-start;
   background-color: #000814;
   padding-top: 125px;
-  padding-right: 100px;
+  padding-right: 75px;
   padding-bottom: 150px;
   padding-left: 100px;
   background-position: center;
 }
-.sec1 .quienessomos {
+.sec1 .quienessomos_p {
   padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 0px !important;
   padding-bottom: 150px;
   width: 100%;
   background-color: #000814;
@@ -202,6 +202,7 @@ section .img {
 }
 .sec2 .comofunciona_p {
   padding-top: 25px;
+  padding-right: 100px;
   padding-bottom: 100px;
   background-color: #000814;
   text-align: justify;
@@ -594,6 +595,9 @@ footer hr {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
     padding: 10px;
     font-size: 30px;
     text-align: center;
@@ -614,7 +618,7 @@ footer hr {
     padding-top: 250px;
     padding-right: 10px;
     padding-left: 10px;
-    padding-bottom: 175px;
+    padding-bottom: 200px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -633,7 +637,7 @@ footer hr {
   }
 
   h2 {
-    padding-top: 250px !important;
+    padding-top: 275px !important;
     padding-bottom: 0px;
     font-size: 18px;
   }
