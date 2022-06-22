@@ -1,9 +1,20 @@
+@charset "UTF-8";
+/*Selector Universal*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*Mapping de Variables*/
+/*Declaración de Extend*/
+footer footer p, footer, .sec4 .form, .sec4 .subtitle, .sec3 .nuestrosclientes_p .nuestrosclientes_nombre, .sec3 .nuestrosclientes_p, .sec2 .comofunciona_p, .sec1 .quienessomos, section h2, section h1, section .slogan {
+  justify-content: center;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Declaración de Mixing*/
 /*HEADER*************************************************************************************************************************************************************************/
 .jumbotron {
   background-color: #457b9d;
@@ -13,32 +24,26 @@
   height: -moz-fit-content !important;
   height: fit-content !important;
 }
-
-nav {
+.jumbotron nav {
   background-color: #457b9d;
 }
-
-.navbar {
+.jumbotron nav .navbar {
   background-color: #457b9d !important;
   font-size: 15px;
   justify-content: center;
 }
-
-.nav-link {
+.jumbotron nav .nav-link {
   color: #f1faee;
   word-spacing: normal;
 }
-
-.nav-link:hover {
+.jumbotron nav .nav-link:hover {
   color: #000814;
 }
-
-html {
+.jumbotron html {
   scroll-behavior: smooth;
 }
-
-.encabezado {
-  background-color: #457b9d;
+.jumbotron .encabezado {
+  background-color: #f1faee;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -46,13 +51,11 @@ html {
   color: #f1faee;
   font-weight: bold;
 }
-
-.encabezado span {
-  color: #003566;
+.jumbotron .encabezado .encabezado span {
+  color: #457b9d;
   font-weight: bold;
 }
-
-header {
+.jumbotron header {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -66,51 +69,7 @@ header {
   z-index: 1;
 }
 
-.slogan {
-  font-size: 40px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #1d3557;
-  width: 100%;
-  text-align: center;
-  background-color: #000814;
-  color: #f1faee;
-  padding-top: 250px;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-bottom: 10px;
-  margin: 0;
-}
-
 /*HOME*************************************************************************************************************************************************************************/
-h1 {
-  /*Color de los inicios de pagina*/
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 40px;
-  color: #f1faee;
-  font-weight: bold;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: #000814;
-}
-
-h2 {
-  text-align: center;
-  background-color: #000814;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
-  color: #f1faee;
-  font-weight: bold;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding-top: 225px !important;
-  -webkit-animation-fill-mode: inherit;
-          animation-fill-mode: inherit;
-  margin: 0;
-}
-
 section {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -120,16 +79,47 @@ section {
   padding-left: 200px;
   padding-right: 200px;
   padding-bottom: 150px;
-  background-color: #000814;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  text-align: center;
   display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  background-color: #000814;
 }
-
-.img {
+section .slogan {
+  margin: 0;
+  padding-top: 250px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: #000814;
+  font-size: 40px;
+  font-weight: bold;
+}
+section h1 {
+  /*Color de los inicios de pagina*/
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #000814;
+  font-size: 40px;
+  font-weight: bold;
+}
+section h2 {
+  margin: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 225px !important;
+  background-color: #000814;
+  -webkit-animation-fill-mode: inherit;
+          animation-fill-mode: inherit;
+  font-size: 30px;
+  font-weight: bold;
+}
+section .img {
   background-color: #000814;
   padding-top: 100px;
   padding-right: 100px;
@@ -140,44 +130,41 @@ section {
 
 /*QUIENES SOMOS*************************************************************************************************************************************************************************/
 .sec1 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding-top: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 150px;
+  display: grid;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   flex-flow: row wrap;
   align-items: flex-start;
   background-color: #000814;
-  background-position: center;
   padding-top: 125px;
   padding-right: 100px;
   padding-bottom: 150px;
   padding-left: 100px;
-  display: grid;
+  background-position: center;
 }
-
-.sec1 p {
-  padding-top: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.quienessomos {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  text-align: justify;
+.sec1 .quienessomos {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 150px;
-  color: #f1faee;
-  font-weight: lighter;
-  background-color: #000814;
   width: 100%;
+  background-color: #000814;
   display: grid;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  text-align: justify;
+  font-size: 15px;
 }
-
-.nleft {
+.sec1 .nleft {
   background-image: url(imagenes/depositphotos_58729343-stock-photo-smiling-young-black-woman-working.jpg);
   background-size: auto;
   background-repeat: no-repeat;
@@ -187,179 +174,189 @@ section {
 
 /*COMO FUNCIONA*************************************************************************************************************************************************************************/
 .sec2 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding-top: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 150px;
+  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row wrap;
+  align-items: flex-start;
   background-color: #000814;
   padding-top: 125px;
   padding-right: 100px;
   padding-bottom: 150px;
   padding-left: 100px;
-  display: grid;
 }
-
-iframe {
+.sec2 iframe {
   padding-right: 100px;
   padding-bottom: 0px;
   padding-left: 100px;
   width: 100%;
 }
-
-.comofunciona_p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
+.sec2 .comofunciona_p {
   padding-top: 25px;
   padding-bottom: 100px;
-  text-align: justify;
-  color: #f1faee;
-  font-weight: lighter;
   background-color: #000814;
+  text-align: justify;
+  font-weight: lighter;
+  font-size: 15px;
 }
 
 /*NUESTROS CLIENTES*************************************************************************************************************************************************************************/
 .sec3 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding-top: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 150px;
+  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row wrap;
+  align-items: flex-start;
   background-color: #000814;
   padding-top: 100px;
   padding-right: 100px;
   padding-bottom: 125px;
   padding-left: 100px;
-  display: grid;
 }
-
-.nuestrosclientes_p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  text-align: justify;
+.sec3 .nuestrosclientes_p {
   padding: 25px;
-  color: #f1faee;
+  text-align: justify;
+  font-size: 15px;
   font-weight: lighter;
 }
-
-.nuestrosclientes_nombre {
+.sec3 .nuestrosclientes_p .nuestrosclientes_nombre {
+  padding-top: 50px;
   padding-bottom: 150px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
-  color: #f1faee;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 /*CONTACTO*************************************************************************************************************************************************************************/
 .sec4 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding-top: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 150px;
+  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row wrap;
+  align-items: flex-start;
   background-color: #000814;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 50px;
   padding-right: 50px;
   padding-left: 50px;
   padding-bottom: 100px;
-  display: grid;
 }
-
-.subtitle {
+.sec4 .subtitle {
   margin: 0;
-  text-align: center;
-  background-color: #000814;
-  color: #f1faee;
   padding-top: 125px;
   padding-right: 50px;
   padding-left: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #000814;
   font-size: 20px;
   font-weight: lighter;
 }
-
-.form {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  text-align: left;
+.sec4 .form {
   padding: 25px;
-  color: #f1faee;
-  font-weight: bold;
-  background-color: rgba(69, 123, 157, 0.0901960784);
+  padding-left: 200px !important;
+  padding-right: 200px !important;
   border: 10px;
   border-radius: 5px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   float: left;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.name {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 0;
+  background-color: #457b9d;
+  text-align: center;
   font-size: 15px;
-  font-weight: 100;
+  font-weight: lighter;
 }
-
-.type {
+.sec4 .form input {
+  width: 100%;
+}
+.sec4 .form label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  font-weight: 100;
+  font-size: 18px;
+  font-weight: lighter;
 }
-
-textarea::-moz-placeholder {
+.sec4 .form textarea::-moz-placeholder {
   font-size: 12px;
+  font-weight: lighter;
 }
-
-textarea:-ms-input-placeholder {
+.sec4 .form textarea:-ms-input-placeholder {
   font-size: 12px;
+  font-weight: lighter;
 }
-
-textarea::placeholder {
+.sec4 .form textarea::placeholder {
   font-size: 12px;
+  font-weight: lighter;
 }
 
 /*FOOTER*************************************************************************************************************************************************************************/
 footer {
+  padding: 20px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   background-color: #457b9d;
-  text-align: center;
   font-size: 15px;
-  padding: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
 }
-
-footer i {
-  font-size: 50px;
+footer footer i {
   color: #003566;
+  font-size: 50px;
+  word-spacing: 10px;
   letter-spacing: 20px;
   text-align: center;
-  word-spacing: 10px;
 }
-
-footer p {
+footer footer p {
   margin-bottom: 20px;
   color: #f1faee;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 10px;
-  text-align: center;
 }
-
-.subir {
+footer .subir {
   height: 50px;
   width: 50px;
-  background-color: #457b9d;
   position: fixed;
   bottom: 40px;
   right: 40px;
-  text-align: center;
-  line-height: 40px;
-  font-size: 25px;
   border-radius: 50%;
   box-shadow: 0 0 10px #f1faee;
+  line-height: 40px;
+  background-color: #457b9d;
+  text-align: center;
+  font-size: 25px;
 }
-
-i {
+footer i {
   padding-top: 5px;
   color: #000814;
   text-align: center;
 }
-
-hr {
+footer hr {
   border-style: groove;
   color: #003566;
   background-color: #000814;
@@ -742,6 +739,5 @@ hr {
     width: -moz-fit-content;
     width: fit-content;
   }
-
-  /**************************************************************************************************************************************************************************/
-}/*# sourceMappingURL=style.css.map */
+}
+/**************************************************************************************************************************************************************************//*# sourceMappingURL=style.css.map */
