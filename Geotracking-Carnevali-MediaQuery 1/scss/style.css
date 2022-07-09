@@ -618,7 +618,7 @@ footer hr {
     padding-top: 250px;
     padding-right: 10px;
     padding-left: 10px;
-    padding-bottom: 200px;
+    padding-bottom: 200px !important;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
